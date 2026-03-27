@@ -14,7 +14,7 @@ public class App {
 
         viajero.mostrarInfo();
 
-        System.out.println("Te tocan-");
+        System.out.println("Te toca-");
 
         Guerrero Thorak = new Guerrero("Thorak", 5, "Hacha doble");
 
@@ -24,7 +24,7 @@ public class App {
 
         Thorak.mostrarInfo();
 
-        System.out.println("Le toca al listilla");
+        System.out.println("Le toca a la listilla");
 
         Mago lyra = new Mago("Lyra", 4, "Hielo");
 
@@ -35,6 +35,16 @@ public class App {
         lyra.mostrarInfo();
 
         System.out.println("Ya mucho entrenamiento por hoy...");
+
+
+        Personaje[] reino = {viajero,Thorak,lyra};
+
+
+        for (int i = 0; i < reino.length; i++) {
+
+            reino[i].mostrarInfo();
+            
+        }
         
   }
 
