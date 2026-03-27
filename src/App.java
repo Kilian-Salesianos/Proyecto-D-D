@@ -24,9 +24,17 @@ public class App {
 
         Thorak.mostrarInfo();
 
-        System.out.println("Le toca al listillo");
+        System.out.println("Le toca al listilla");
 
-        
+        Mago lyra = new Mago("Lyra", 4, "Hielo");
+
+        lyra.ataqueElemental();
+
+        lyra.entrenar(2);
+
+        lyra.mostrarInfo();
+
+        System.out.println("Ya mucho entrenamiento por hoy...");
         
   }
 
