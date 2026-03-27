@@ -12,9 +12,21 @@ public class App {
 
         viajero.gastarEnergia(30);
 
-        
         viajero.mostrarInfo();
 
+        System.out.println("Te tocan-");
+
+        Guerrero Thorak = new Guerrero("Thorak", 5, "Hacha doble");
+
+       Thorak.ataquePesado();
+
+        Thorak.descansar(10);
+
+        Thorak.mostrarInfo();
+
+        System.out.println("Le toca al listillo");
+
+        
         
   }
 
