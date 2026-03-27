@@ -36,6 +36,40 @@ public Personaje(String nombre, int nivel) {
         }
     }
 
+    public void entrenar(int x) {
+        if (x > 0) {
+            nivel += x;
+        } else {
+            System.out.println("No puedes entrenar 0 o menos niveles.");
+        }
+    }
+
+    public void descansar(int x) {
+        if (x <= 0) {
+            System.out.println("Cantidad inválida.");
+        } else if (energia + x > 100) {
+            energia = 100;
+        } else {
+            energia += x;
+        }
+    }
+
+    public void gastarEnergia(int x) {
+        if (x <= 0) {
+            System.out.println("Cantidad inválida.");
+        } else if (energia - x < 0) {
+            energia = 0;
+        } else {
+            energia -= x;
+        }
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Nivel: " + nivel);
+        System.out.println("Energía: " + energia);
+    }
+
   
     
 }
